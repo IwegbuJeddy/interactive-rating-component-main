@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  
+
+  <!-- Thank you state end -->
+
+  <div id="container">
+    <div id="guide">
+    <div class="imgholder">
+      <img src="C:\Users\HP\Desktop\interactive-rating-component-main\images\icon-star.svg">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div id="rating">
+      <input type="button" id="one" value="1">
+      <input type="button" id="two" value="2">
+      <input type="button" id="three" value="3">
+      <input type="button" id="four" value="4">
+      <input type="button" id="five" value="5">
+    </div>
+    <input type="submit" value="SUBMIT">
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Iwegbu Jeddy</a>.
+  </div>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; color:white; padding-top:100px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background: black;
+      box-sizing: border-box;
+      font-family:Overpass, 'Calibri';
+      
+    }
+    #container{
+      width:30%;
+      height:400px;
+      border-radius: 30px;
+      margin:auto;
+      margin-top:5%;
+      background: hsl(216, 12%, 8%);
+      
+    }
+    #guide{
+      padding-left: 10px;
+    }
+    .imgholder{
+      width:40px;
+      height:40px;
+      border-radius: 50%;
+      background-color: hsl(213, 19%, 18%);
+      position: relative;
+      top:20px;
+      margin-top: 40px;
+      margin-left: 40px;
+      
+    }
+    .imgholder img{
+      margin-top:10px;
+      margin-left: 11px;
+    }
+    h1{
+      
+      color:white;
+      font-weight: 700;
+      padding-top: 30px;
+      margin-left: 40px;
+    }
+    p{
+      font-weight:400;
+      font-size: 15px;
+      color: hsl(216, 12%, 54%);
+      width:auto;
+      margin-left: 40px;
+      display: inline-block;
+      line-height: 1.8;
+      
+    }
+    #rating{
+      padding-left: 40px;
+    }
+    input[type="button"]{
+      width:50px;
+      height:50px;
+      border-radius: 50%;
+      border: none;
+      background:hsl(213, 19%, 18%);
+      color: hsl(217, 12%, 63%);
+      margin-top:10px;
+      margin-right: 8px;
+      outline:none;
+      cursor: pointer;
+    }
+    input[type="submit"]{
+      width:80%;
+      height:40px;
+      margin-left: 30px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      outline:none;
+      cursor: pointer;
+      color:hsl(0, 0%, 100%);
+      background-color:  hsl(25, 97%, 53%);
+    }
+    input[type="submit"]:hover{
+      color: hsl(25, 97%, 53%);
+      background-color: hsl(0, 0%, 100%);
+      transition: 1s;
+      font-weight: 400;
+    }
+  </style>
+</body>
+</html>
