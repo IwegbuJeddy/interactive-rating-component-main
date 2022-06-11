@@ -52,13 +52,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
+- Vanilla JavaScript
+- JQuery
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
@@ -69,15 +64,42 @@ To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+How to add a favicon to a webpage
 ```
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
+:root{
+
+}
+How to add CSS variables to a stylesheet
+
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+$('#sub').click(submit=()=>{
+      document.querySelector('.imgholder').style.display = 'none';
+      document.querySelector('#thanks').style.display = 'block';
+      document.querySelector('#thanks').src ="C:/Users/HP/Desktop/interactive-rating-component-main/images/illustration-thank-you.svg";
+      document.querySelector('h1').innerHTML = 'Thank you!';
+      document.querySelector('h1').style.paddingTop = '0px';
+      document.querySelector('h1').style.marginLeft = '0px';
+      document.querySelector('p').style.paddingTop = '0px';
+      document.querySelector('p').style.marginLeft = '0px';
+      document.querySelector('p').innerHTML = 'We appreciate you taking the time to give a rating. If you ever need more support, don\'t hesitate to get in touch!';
+      document.querySelector('#res').innerText = 'You selected out of 5';
+      document.querySelector('body').style.textAlign = 'center';
+      document.querySelector('#rating').style.display = 'none';
+      document.querySelector('#results').style.display = 'block';
+      document.querySelector('p').style.marginLeft = '0px';
+      document.querySelector('#sub').style.display = 'none';
+      
+
+    })
+    DOM manipulation and events with JavaScript and JQuery
+    
+
 }
 ```
 
@@ -100,9 +122,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Iwegbu Jeddy](https://www.your-site.com)
+- Frontend Mentor - [@IwegbuJeddy](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@IwegbuJeddy](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
