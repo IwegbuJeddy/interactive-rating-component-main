@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="C:\Users\HP\Downloads\jquery-3.6.0.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
   <title>Frontend Mentor | Interactive rating component</title>
@@ -16,6 +17,7 @@
   <!-- Rating state start -->
   <div id="container">
     <div id="guide">
+      <img src="#" id="thanks">
     <div class="imgholder">
       <img src="C:\Users\HP\Desktop\interactive-rating-component-main\images\icon-star.svg">
     </div>
@@ -24,13 +26,13 @@
       to help us improve our offering!
     </p>
     <div id="rating">
-      <input type="button" id="one" value="1">
-      <input type="button" id="two" value="2">
-      <input type="button" id="three" value="3">
-      <input type="button" id="four" value="4">
-      <input type="button" id="five" value="5">
+      <input type="button" id="one" class="rate"value="1">
+      <input type="button" id="two" class="rate" value="2">
+      <input type="button" id="three" class="rate" value="3">
+      <input type="button" id="four" class="rate" value="4">
+      <input type="button" id="five" class="rate" value="5">
     </div>
-    <input type="submit" value="SUBMIT">
+    <input type="submit" value="SUBMIT" id="sub">
     </div>
   </div>
   
@@ -44,6 +46,12 @@
   </div>
 
   <style>
+  @media(max-width:345){
+    body{
+      background: aqua;
+
+    }
+  }
     :root{
       --orange: hsl(25, 97%, 53%);
       --white:hsl(0, 0%, 100%);
@@ -52,6 +60,7 @@
       --darkblue:hsl(213, 19%, 18%);
       --darkerblue:hsl(216, 12%, 8%);
     }
+  
     .attribution { 
       font-size: 11px; 
       text-align: center; 
@@ -66,6 +75,13 @@
       box-sizing: border-box;
       font-family:Overpass, 'Calibri';
       
+    }
+    #thanks{
+      display:none;
+      margin:0;
+      position: relative;
+      left:25%;
+      top:4%;
     }
     #container{
       width:30%;
@@ -83,7 +99,7 @@
       width:40px;
       height:40px;
       border-radius: 50%;
-      background-color: var(--darkerblue);
+      background-color: var(--darkblue);
       position: relative;
       top:20px;
       margin-top: 40px;
@@ -127,7 +143,8 @@
       cursor: pointer;
     }
     input[type="button"]:hover{
-      color:var(--orange);
+      background:var(--orange);
+      color: var(--white);
     }
     input[type="submit"]{
       width:80%;
@@ -150,6 +167,21 @@
   </style>
 
   <script>
+   buttons = [$('#one'), $('#two'), $('#three'), $('#four'), $('#five')];
+  
+    $('#sub').click(submit=()=>{
+      document.querySelector('.imgholder').style.display = 'none';
+      document.querySelector('#thanks').style.display = 'block';
+      document.querySelector('#thanks').src ="C:/Users/HP/Desktop/interactive-rating-component-main/images/illustration-thank-you.svg";
+      document.querySelector('h1').innerHTML = 'Thank you!';
+      document.querySelector('p').innerHTML = 'We appreciate you taking the time to give a rating. If you ever need more support, don\'t hesitate to get in touch!';
+      document.querySelector('body').style.textAlign = 'center';
+      document.querySelector('#rating').style.display = 'none';
+      document.querySelector('p').style.marginLeft = '0px';
+      document.querySelector('#sub').style.display = 'none';
+      
+
+    })
     
   </script>
 </body>
