@@ -183,6 +183,7 @@
       
      
     $('#sub').click(submit=()=>{
+      var rateVal = 3;
       document.querySelector('.imgholder').style.display = 'none';
       document.querySelector('#thanks').style.display = 'block';
       document.querySelector('#thanks').src ="C:/Users/HP/Desktop/interactive-rating-component-main/images/illustration-thank-you.svg";
@@ -192,7 +193,7 @@
       document.querySelector('p').style.paddingTop = '0px';
       document.querySelector('p').style.marginLeft = '0px';
       document.querySelector('p').innerHTML = 'We appreciate you taking the time to give a rating. If you ever need more support, don\'t hesitate to get in touch!';
-      document.querySelector('#res').innerText = 'You selected out of 5';
+      document.querySelector('#res').innerText = 'You selected' + " " + rateVal+ " " +'out of 5';
       document.querySelector('body').style.textAlign = 'center';
       document.querySelector('#rating').style.display = 'none';
       document.querySelector('#results').style.display = 'block';
