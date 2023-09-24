@@ -1,0 +1,110 @@
+*{
+    font-family: 'Overpass';
+    color:var(--white);
+    box-sizing:border-box;
+}
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --darkerblue: hsl(216, 12%, 8%);
+  }
+body{
+    background-color: black;
+}
+@media (max-width: 425px) {
+    .starcircle{
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        background-color: var(--darkblue);
+        margin:15px;
+    }
+    .container{
+        width: calc(10 - 40%);
+        height:400px;
+        background: var(--darkerblue);
+        border-radius: 20px;
+        display:flex;
+        flex-direction: column;
+        margin:20px;
+        /* margin:0; */
+    }
+    p{
+        font-size:1em;
+    }
+    .text{
+        margin-left:15px;
+    }
+    .raters{
+        padding-left:5%;
+        padding-right:5%;
+    }
+}
+.container{
+    width: calc(10 - 40%);
+    height:400px;
+    background: var(--darkerblue);
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    /* margin:0; */
+}
+/* div{
+    border:2px solid yellow;
+} */
+.starcircle{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: var(--darkblue);
+}
+.starcircle img{
+    padding:6px;
+}
+h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+p {
+    font-size: 17px;
+    color: var(--lightgrey);
+}
+.raters{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin:0;
+}
+.raters input{
+    width:50px; 
+    height:50px;
+    border-radius: 50%;
+    background: var(--darkblue);
+    color:var(--lightgrey);
+    border: none;
+    cursor: pointer;
+}
+.raters input:focus{
+    background: var(--orange);
+    color:var(--white);
+}
+input[type="submit"]{
+  width: 80%;
+  height: 40px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--orange);
+  text-transform: uppercase;
+}
+input[type="submit"]:hover{
+    background: var(--white);
+    color:var(--orange);
+}
